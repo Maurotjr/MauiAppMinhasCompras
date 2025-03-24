@@ -24,15 +24,12 @@ namespace MauiAppMinhasCompras
             }
         }
 
-
         public App()
         {
             InitializeComponent();
-        }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new NavigationPage(new Views.ListaProduto()));
+            //MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.ListaProduto());
         }
     }
 }
